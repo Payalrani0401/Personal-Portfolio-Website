@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Perssonal Portfolio Website</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/abc2f681cb.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div id="header">
+    <div class="container">
+        <nav>
+            <img src="logo.png" class="logo">
+            <ul>
+                <li><a href="#header">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#contact">Contact</a></li>
+                
+            </ul>
+            <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+        </nav>
+        <div class="header-text">
+            <p>Web Developer</p>
+            <h1>Hello!I am <span>Kevin</span><br>Jen From India</h1>
+        </div>
+    </div>
+    </div>
+   <!--------about------> 
+    <div id="about">
+        <div class="container">
+            <div class="row">
+              
+               <div class="about-col-1">
+                  <img src="user.png">
+               </div>
+               <div class="about-col-2">
+                  <h1 class="sub-title">About Me</h1>
+                  <P>HI! This is Kevin. I am a Web Developer and am from Banglore,India.
+                    I have designed multiple websites and webpages for many companies.
+                    I have a keen interest in coding. Lorem ipsum dolor sit amet, consectetur adipisicing
+                     elit. Rerum optio tempore temporibus, deserunt commodi omnis persp
+                    iciatis dolore facilis ea quidem enim tempora nesciunt. Libero exercitationem cupiditate,
+                     vel sed blanditiis voluptates.</P>
+               </div>
+                 
+               <div class="tab-tittles">
+                   <p class="tab-links active-link" onclick="opentab('Skills')" >Skills</p>
+                   <p class="tab-links active-link" onclick="opentab('Experience')" >Experience</p>
+                   <p class="tab-links active-link" onclick="opentab('Education')" >Education</p>
+               </div>
+               <div class="tab-contents active-tab" id="Skills">
+                     <ul>
+                        <li><span>Web Development</span><br>Web app Development</li>
+                        <li><span>UI/UX</span><br>Designing Web/App interfaces</li>
+                        <li><span>App Development</span><br>Buiding Android apps</li>
+                     </ul>
+               </div>
+               <div class="tab-contents active-tab" id="Experience">
+                   <ul>
+                        <li><span>2021-cuurent</span><br>UI/UX Design Training at Flipkrat</li>
+                        <li><span>2019-2020</span><br>Team Lead at startup LLT.</li>
+                        <li><span>2017-2019</span><br>B.tech from NIT JAMSHEDPUR</li>
+                   </ul>
+               </div>
+               <div class="tab-contents active-tab"  id="Education">
+                    <ul>
+                        <li><span>2018</span><br>UI/UX Design Training</li>
+                        <li><span>2017</span><br>Internship</li>
+                    </ul>
+               </div>
+            </div>
+        </div>
+
+     </div>
+ </div>
+ <script> 
+    var tablinks = document.getElementsByClassName("tab-links");
+   var tabcontents = document.getElementsByClassName("tab-contents");
+
+    function opentab(tabname){
+    for(tablink of tablinks){
+        tablink.classList.remove("active-link");
+
+    }
+    for(tabcontents of tabcontents){
+        tabcontent.classList.remove("active-tab");
+    }
+         event.currentTarget.classList.add("active-link");
+         document.getElementById(tabname).classList.add("active-tab");
+  }
+
+  </script>
+
+<!-------services---->
+<div id="services">
+     <div class="container">
+          <h1 class="sub-title">My Services</h1>
+          <div class="services-list"></div>
+             <div>
+                <i class="fa-solid fa-code"></i>
+                <h2>Web Design</h2>
+                <p>Web design is the creation of websites and web pages.It promotes 
+                    accessibility for all potential users.And my duty is to make optimized 
+                    versions of websites and pages both for desktop and mobile viewing.
+                </p>
+                <a href="#">Learn More </a>
+               
+
+             </div>
+
+             <div>
+                <i class="fa-solid fa-crop"></i></i>
+                <h2>UI/UX</h2>
+               
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Saepe quibusdam
+                     vitae eos quas totam deserunt voluptates, a consequuntur explicabo, sed 
+                     sequi! Laborum a dolor facilis numquam molestias nostrum accusamus rerum 
+                     aut itaque, dolorem eos?
+
+                </p>
+                <a href="#">Learn More </a>
+              </div>
+          
+
+             <div>
+                <i class="fa-brands fa-app-store"></i></i>
+                <h2>App Design</h2>
+               
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa corporis
+                     velit consequatur fugit ipsa,adipisci quia, voluptas natus nesciunt 
+                     fuga iure deserunt odit at nihil. Corporis quidem modi iste tempora?
+
+                </p>
+                <a href="#">Learn More </a>
+             </div>
+             </div> 
+     </div>
+</div>
+<!----contact---->
+  <div id="contact">
+    <div class="container">
+        <div class="row">
+            <div class="contact-left">
+                <h1 class="sub-title">Contact</h1>
+                <p><i class="fa-solid fa-paper-plane"></i> contactkevin1823@gmail.com</p>
+                <p><i class="fa-solid fa-phone"></i> 09236781238</p>
+                <div class="social-icons">
+                    <a href=""><i class="fa-brands fa-facebook"></i></a>
+                    <a href=""><i class="fa-brands fa-instagram"></i></a>
+                    <a href=""><i class="fa-brands fa-whatsapp"></i></a>
+                    <a href=""><i class="fa-brands fa-youtube"></i></a>
+                </div>
+                <a href="cv" download class="btn btn2">Download CV</a>
+            </div>
+            <div class="contact-right">
+                <form>
+                    <input="text" name="Name" placeholder="Your name" required>
+                    <input="email" name="email" placeholder="Your email" required>
+                    <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                    <button type="submit">Submit</button>
+ 
+                </form>
+            </div>
+        </div>
+    </div>
+    <div class="copyright">
+        <p>Copyright © Kevin. Made with <i class="fa-solid fa-heart"></i></p>
+    </div>
+  </div>
+
+
+
+
+  <script>
+    var tablinks = document.getElementsByClassName("tab-links");
+var tabcontents = document.getElementsByClassName("tab-contents");
+
+function opentab(tabname){
+    for(tablink of tablinks){
+        tablink.classList.remove("active-link");
+
+    }
+    for(tabcontents of tabcontents){
+        tabcontent.classList.remove("active-tab");
+    }
+         event.currentTarget.classList.add("active-link");
+         document.getElementById(tabname).classList.add("active-tab");
+}
+
+  </script>
+
+  
+
+</body>
+</html>
